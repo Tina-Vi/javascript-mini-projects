@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "MonserratAlternates";
+    font-style: normal;
+    font-weight: 400;
+    src: local("MonserratAlternates"),
+    url(/Form/fonts/MontserratAlternates-Regular.woff2) format("woff2"),
+    url(/Form/fonts/MontserratAlternates-Regular.woff) format("woff");
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to right bottom, #b6cae5 20%, #e1e7f3 40%, #f0cedb 80%, #939fcc);
+    font-family: "MonserratAlternates", serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 40px;
+}
+
+.form__container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-focus {
+    border: 1px solid rgba(80, 4, 80, 0.7);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3 );
+    outline: none;
+}
+
+.wrapper {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.form__checkbox-type {
+    font-size: 15px;
+}
+
+.input-type {
+    width: 300px;
+    height: 35px;
+    padding-left: 8px;
+    font-family: "MonserratAlternates", serif;
+    font-size: 15px;
+    color: rgb(80, 4, 80);
+    border: 1px solid rgba(80, 4, 80, 0.7);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.input-type:focus {
+    border: 2px solid rgb(80, 4, 80);
+    outline: none;
+    background-color: white;
+}
+
+.checkbox-type {
+    accent-color: rgb(80, 4, 80);
+}
+
+.button-type {
+    font-family: "MonserratAlternates", serif;
+    background-color: white;
+    border: 2px solid rgb(80, 4, 80);
+    color: rgb(80, 4, 80);
+    font-size: 15px;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    transition: 0.2s, 0.4s;
+}
+
+.button-type:hover {
+    background-color: rgba(80, 4, 80, 0.2);
+    color: rgb(12, 1, 12);
+}
+
+.button-type:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(80, 4, 80, 0.2);
+}
+
+
+
+
+
+
+.inactive-button {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(80, 4, 80, 0.5);
+    border: 1px solid rgba(80, 4, 80, 0.7);
+    font-family: "MonserratAlternates", serif;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    cursor: not-allowed;
+}
+
+.form__error {
+    display: block;
+    min-height: 20px;
+    font-size: 12px;
+    padding: 5px 0 10px;
+    color: red;
+}
+
+.form__empty-error {
+    display: block;
+    font-size: 12px;
+    color: red;
+}
+
+.input-active-error {
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.05);
+}

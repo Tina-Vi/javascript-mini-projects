@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <h1>Модальное окно для удаления товаров из корзины</h1>
+    <button class="question">Очистить корзину</button>
+
+    <dialog class="container first-question">
+      <div class="content">
+        <h2>Вы действительно хотите очистить корзину?</h2>
+        <p>Все товары при этом будут удалены</p>
+
+        <div class="for-btns">
+          <button class="yes-btn">Да</button>
+          <button class="no-btn">Нет</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="container second-question">
+      <div class="content">
+        <h2>Корзина пуста</h2>
+        <p>В Вашей корзине нет выбранных товаров</p>
+
+        <button class="small">Перейти в каталог товаров</button>
+      </div>
+    </dialog>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

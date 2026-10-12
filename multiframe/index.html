@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>MultyFrames</title>
+  </head>
+  <body>
+    <dialog>
+      <button class="closeX">&times;</button>
+      <div class="content">
+        <h2>
+          Здесь Вы можете открывать до 8 сайтов в разных окнах одновременно и
+          работать в режиме многозадачности!
+        </h2>
+        <p>
+          Чтобы добавить новый сайт в окно или заменить старый, кликните на
+          соответствующую кнопку и введите URL-адрес сайта
+        </p>
+        <p>Чтобы очистить все окна кликните на кнопку "Очистить все"</p>
+      </div>
+    </dialog>
+
+    <div class="grid-container">
+      <iframe data-frame-number="1" src="about:blank"></iframe>
+      <iframe data-frame-number="2" src="about:blank"></iframe>
+      <iframe data-frame-number="3" src="about:blank"></iframe>
+      <iframe data-frame-number="4" src="about:blank"></iframe>
+      <div class="button-wrapper">
+        <button
+          title="Чтобы добавить новый/заменить старый сайт кликните сюда"
+          class="add"
+          data-frame-number="1"
+        >
+          Сайт 1
+        </button>
+        <button
+          title="Чтобы добавить новый/заменить старый сайт кликните сюда"
+          class="add"
+          data-frame-number="2"
+        >
+          Сайт 2
+        </button>
+        <button
+          title="Чтобы добавить новый/заменить старый сайт кликните сюда"
+          class="add"
+          data-frame-number="3"
+        >
+          Сайт 3
+        </button>
+        <button
+          title="Чтобы добавить новый/заменить старый сайт кликните сюда"
+          class="add"
+          data-frame-number="4"
+        >
+          Сайт 4
+        </button>
+        <button id="remove">Очистить все</button>
+        <button
+          title="Чтобы добавить новый/заменить старый сайт кликните сюда"
+          class="add"
+          data-frame-number="5"
+        >
+          Сайт 5
+        </button>
+        <button
+          title="Чтобы добавить новый/заменить старый сайт кликните сюда"
+          class="add"
+          data-frame-number="6"
+        >
+          Сайт 6
+        </button>
+        <button
+          title="Чтобы добавить новый/заменить старый сайт кликните сюда"
+          class="add"
+          data-frame-number="7"
+        >
+          Сайт 7
+        </button>
+        <button
+          title="Чтобы добавить новый/заменить старый сайт кликните сюда"
+          class="add"
+          data-frame-number="8"
+        >
+          Сайт 8
+        </button>
+      </div>
+      <iframe data-frame-number="5" src="about:blank"></iframe>
+      <iframe data-frame-number="6" src="about:blank"></iframe>
+      <iframe data-frame-number="7" src="about:blank"></iframe>
+      <iframe data-frame-number="8" src="about:blank"></iframe>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

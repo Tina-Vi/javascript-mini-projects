@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Comfortaa"),
+    url('/RunningText/font/Comfortaa-Regular.woff2') format('woff2'),
+    url('/RunningText/font/Comfortaa-Regular.woff') format('woff');
+}
+
+html {
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(27,23,40) 15%, rgb(34,6,44) 45%, rgb(66,13,55) 70%, rgb(101,57,92) 90%, rgb(123,90,119) 95%, rgb(158,147,164));
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Comfortaa', serif;
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+.wrapper {
+    padding-top: 3%;
+    padding-left: 5%;
+    max-width: 75%;
+}

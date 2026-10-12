@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>The form with custom validation</title>
+  </head>
+  <body>
+    <form name="form" tabindex="0" novalidate>
+      <div class="form__container">
+        <label class="form__field-container">
+          <span class="wrapper">Имя:</span>
+          <input
+            type="text"
+            id="input-name"
+            class="input-type"
+            pattern="^[А-Я][а-яё]*$"
+            placeholder="Виктор"
+            minlength="2"
+            maxlength="30"
+            data-error-message="Допускаются только буквы кириллицы и тире"
+            aria-describedby="name-error"
+            required
+          />
+        </label>
+        <span
+          class="form__error input-name-error"
+          id="name-error"
+          aria-live="polite"
+        ></span>
+      </div>
+      <div class="form__container">
+        <label class="form__field-container">
+          <span class="wrapper">Фамилия:</span>
+          <input
+            type="text"
+            id="input-surname"
+            placeholder="Викторов"
+            minlength="2"
+            maxlength="35"
+            class="input-type"
+            pattern="^[А-Я][а-яё]*$"
+            data-error-message="Допускаются только буквы кириллицы и тире"
+            aria-describedby="surname-error"
+            required
+          />
+        </label>
+        <span
+          class="form__error input-surname-error"
+          id="surname-error"
+          aria-live="polite"
+        ></span>
+      </div>
+      <div class="form__container">
+        <label class="form__field-container">
+          <span class="wrapper">Возраст:</span>
+          <input
+            type="number"
+            id="input-age"
+            class="input-type"
+            min="18"
+            max="120"
+            placeholder="30"
+            aria-describedby="age-error"
+            required
+          />
+        </label>
+        <span
+          class="form__error input-age-error"
+          id="age-error"
+          aria-live="polite"
+        ></span>
+      </div>
+      <div class="form__container">
+        <label class="form__field-container">
+          <span class="wrapper">Почта:</span>
+          <input
+            type="email"
+            id="input-email"
+            class="input-type"
+            data-error-message="Проверьте правильность написания электронной почты"
+            minlength="6"
+            maxlength="50"
+            pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$"
+            placeholder="viktor.viktorov@yandex.ru"
+            aria-describedby="email-error"
+            required
+          />
+        </label>
+        <span
+          class="form__error input-email-error"
+          id="email-error"
+          aria-live="polite"
+        ></span>
+      </div>
+      <div class="form__container">
+        <label class="form__field-container">
+          <input
+            type="checkbox"
+            class="checkbox-type"
+            id="checkbox-yes"
+            aria-describedby="check-error"
+            checked
+            required
+          />
+          <span class="form__checkbox-type">
+            Я даю согласие на обработку своих персональных данных
+          </span>
+        </label>
+        <span
+          class="form__error checkbox-yes-error"
+          id="check-error"
+          aria-live="polite"
+        ></span>
+      </div>
+      <div class="form__container">
+        <button
+          type="submit"
+          class="button-type"
+          aria-describedby="empty-error"
+        >
+          Отправить
+        </button>
+        <span
+          class="form__empty-error"
+          id="empty-error"
+          aria-live="assertive"
+        ></span>
+      </div>
+    </form>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
