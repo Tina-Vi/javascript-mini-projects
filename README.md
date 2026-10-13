@@ -8,11 +8,15 @@ These projects focus on practicing DOM manipulation, event handling, form valida
 
 ### 1. Calculator
 
+[Live Demo](https://tina-vi.github.io/javascript-mini-projects/calculator/)
+
 A simple calculator supporting basic arithmetic operations, decimal numbers, and percentage calculations
 
 **Technologies:** HTML, CSS, JavaScript
 
 ### 2. Form Validation
+
+[Live Demo](https://tina-vi.github.io/javascript-mini-projects/form-validation/)
 
 A form with custom validation, error messages, and visual feedback
 
@@ -25,6 +29,8 @@ A form with custom validation, error messages, and visual feedback
 
 ### 3. Typewriter Effect
 
+[Live Demo](https://tina-vi.github.io/javascript-mini-projects/typewriter/)
+
 An animated text display that simulates typing and deleting characters
 
 **Features:**
@@ -35,6 +41,8 @@ An animated text display that simulates typing and deleting characters
 
 ### 4. Modal Window
 
+[Live Demo](https://tina-vi.github.io/javascript-mini-projects/modal-window/)
+
 A shopping cart confirmation interface built with native HTML dialogs
 
 **Features:**
@@ -44,6 +52,8 @@ A shopping cart confirmation interface built with native HTML dialogs
 - Closing dialogs using the Escape key or clicking outside
 
 ### 5. Multiframe Viewer
+
+[Live Demo](https://tina-vi.github.io/javascript-mini-projects/multiframe/)
 
 An interface for displaying up to eight websites in separate iframe elements
 
